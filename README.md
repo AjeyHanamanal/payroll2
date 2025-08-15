@@ -330,4 +330,4 @@ For support and questions, please open an issue in the repository.
 - [ ] Multi-company support
 - [ ] Integration with accounting software
 - [ ] Automated payroll processing
-- [ ] Employee self-service portal 
+- [ ] Employee self-service portal "# payroll" 
