@@ -5,9 +5,9 @@ services:
     env: node
     plan: starter
     branch: main
-    buildCommand: npm install
-    startCommand: npm start
-    rootDir: server
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    rootDir: .
     envVars:
       - key: NODE_ENV
         value: production
@@ -26,9 +26,9 @@ services:
     env: node
     plan: starter
     branch: main
-    buildCommand: npm install && npm run build
-    startCommand: npx serve -s build
-    rootDir: client
+    buildCommand: cd client && npm install && npm run build
+    startCommand: cd client && npx serve -s build -l 3000
+    rootDir: .
     envVars:
       - key: NODE_ENV
         value: production
