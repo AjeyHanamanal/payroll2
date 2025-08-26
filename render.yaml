@@ -21,12 +21,12 @@ services:
         value: 30d
 
   # Frontend Static Site
-  - type: static
+  - type: static_site
     name: payroll-frontend
     plan: starter
     branch: main
     buildCommand: npm install && npm run build
-    publishPath: ./build
+    publishPath: build
     rootDir: client
     envVars:
       - key: NODE_ENV
