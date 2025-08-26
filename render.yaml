@@ -20,13 +20,14 @@ services:
       - key: JWT_EXPIRE
         value: 30d
 
-  # Frontend Static Site
-  - type: static_site
+  # Frontend Web Service
+  - type: web
     name: payroll-frontend
+    env: static
     plan: free
     branch: main
     buildCommand: npm install && npm run build
-    publishPath: build
+    staticPublishPath: ./build
     rootDir: client
     envVars:
       - key: NODE_ENV
