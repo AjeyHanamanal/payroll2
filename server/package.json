@@ -1,5 +1,5 @@
 {
-  "name": "payroll-server",
+  "name": "server",
   "version": "1.0.0",
   "description": "Backend for Payroll Management System",
   "main": "index.js",
